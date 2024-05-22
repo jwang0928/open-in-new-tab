@@ -4,11 +4,15 @@
     <title>Redirecting...</title>
     <script type="text/javascript">
         window.onload = function() {
-            var blankPage = window.open('', '_blank');
-            blankPage.location = 'https://us-east-1.online.tableau.com/#/site/luxotticaretaileyecaredashboard/views/FAR_16983414351920/FARDeepDive?:iid=1';
-            setTimeout(function() {
-                blankPage.close();
-            }, 1000); // Adjust the timeout as necessary
+            var newTab = window.open('about:blank', '_blank');
+            if (newTab) {
+                newTab.location.href = 'https://us-east-1.online.tableau.com/#/site/luxotticaretaileyecaredashboard/views/FAR_16983414351920/FARDeepDive?:iid=1';
+                window.setTimeout(function() {
+                    newTab.close();
+                }, 5000); // Adjust the timeout as necessary
+            } else {
+                window.location.href = 'https://us-east-1.online.tableau.com/#/site/luxotticaretaileyecaredashboard/views/FAR_16983414351920/FARDeepDive?:iid=1';
+            }
         };
     </script>
 </head>

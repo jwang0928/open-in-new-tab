@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Open in New Tab</title>
+    <title>Redirecting...</title>
     <script type="text/javascript">
-        function openInNewTab() {
+        window.onload = function() {
             window.open('https://us-east-1.online.tableau.com/#/site/luxotticaretaileyecaredashboard/views/AtaGlance2_0/FARDeepDive?:iid=1', '_blank');
-        }
+            window.location.href = 'https://us-east-1.online.tableau.com/#/site/luxotticaretaileyecaredashboard/views/AtaGlance2_0/FARDeepDive?:iid=1';
+        };
     </script>
 </head>
-<body onload="openInNewTab()">
-    <p>If the new tab did not open, <a href="https://us-east-1.online.tableau.com/#/site/luxotticaretaileyecaredashboard/views/AtaGlance2_0/FARDeepDive?:iid=1" target="_blank">click here</a>.</p>
+<body>
 </body>
 </html>
